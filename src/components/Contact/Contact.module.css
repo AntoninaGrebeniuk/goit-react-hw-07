@@ -1,0 +1,47 @@
+.name {
+  width: 150px;
+  font-size: 18px;
+  color: var(--white);
+  border-bottom: 1px solid var(--borderLine);
+}
+
+.number {
+  width: 150px;
+  font-size: 18px;
+  color: var(--white);
+  border-bottom: 1px solid var(--borderLine);
+}
+
+.btnDelete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  width: 40px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+  background: var(--yellow);
+  background: linear-gradient(
+    to bottom,
+    var(--yellow) 0%,
+    var(--darkYellow) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--yellow)', endColorstr='var(--darkYellow)', GradientType=0 );
+  border: 0;
+  border-radius: 30px;
+
+  text-shadow: -1px -1px var(--darkOrange), 0 1px 0 var(--lightOrange);
+  transition: transform var(--cubicBezier);
+}
+
+.btnDelete:hover,
+.btnDelete:focus {
+  outline: none;
+
+  transform: scale(0.92);
+}

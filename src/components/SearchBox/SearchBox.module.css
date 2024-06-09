@@ -1,0 +1,41 @@
+.label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: var(--white);
+  text-shadow: -1px -1px var(--darkViolet), 0 1px 0 var(--greyViolet);
+}
+
+.input {
+  flex: 1;
+  margin-top: 15px;
+  padding: 12px 32px;
+  border: 0;
+  width: 300px;
+  box-sizing: border-box;
+  color: var(--white);
+  font-size: 16px;
+  font-family: 'Courgette', cursive;
+  text-shadow: var(--textShadow);
+  border-radius: 25px;
+  background: var(--greyBlue);
+  caret-color: var(--white);
+
+  background: linear-gradient(
+    to bottom,
+    var(--greyBlue) 0%,
+    var(--paleGrey) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--greyBlue)', endColorstr='var(--paleGrey)', GradientType=0 );
+  transition: transform var(--cubicBezier);
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  transform: scale(1.02);
+}
+
+.input::placeholder {
+  font-family: 'Courgette', cursive;
+  color: var(--placeholderColor);
+}

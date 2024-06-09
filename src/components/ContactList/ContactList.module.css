@@ -1,0 +1,7 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-shadow: -1px -1px var(--darkViolet), 0 1px 0 var(--greyViolet);
+}

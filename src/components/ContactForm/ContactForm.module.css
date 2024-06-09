@@ -1,0 +1,121 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 400px;
+
+  padding: 20px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid var(--borderRed);
+  -webkit-box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+  background: var(--red);
+
+  background: linear-gradient(
+    to right,
+    var(--red) 0%,
+    var(--gradientRed) 29%,
+    var(--gradientRed) 50%,
+    var(--gradientRed) 71%,
+    var(--red) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--red)', endColorstr='var(--red)', GradientType=1 );
+}
+
+.form:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 32px;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--white);
+  font-size: 16px;
+  font-family: 'Courgette', cursive;
+  text-shadow: var(--textShadow);
+  border-radius: 25px;
+  background: var(--red);
+  caret-color: var(--white);
+
+  background: linear-gradient(to bottom, var(--red) 0%, var(--lightRed) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--red)', endColorstr='var(--lightRed)', GradientType=0 );
+  transition: transform var(--cubicBezier);
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  transform: scale(1.02);
+}
+
+.input::placeholder {
+  font-family: 'Courgette', cursive;
+  color: var(--placeholderColor);
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  width: 250px;
+
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
+  background: var(--yellow);
+  background: linear-gradient(
+    to bottom,
+    var(--yellow) 0%,
+    var(--darkYellow) 100%
+  );
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--yellow)', endColorstr='var(--darkYellow)', GradientType=0 );
+  border: 0;
+  border-radius: 30px;
+  color: var(--white);
+  margin-top: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: -1px -1px var(--darkOrange), 0 1px 0 var(--lightOrange);
+  transition: transform var(--cubicBezier);
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  transform: scale(0.95);
+}
+
+.label {
+  font-size: 22px;
+  color: var(--white);
+  text-shadow: -1px -2px var(--brightRed), 0 1px 0 var(--paleRed);
+}
+
+.error {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  color: var(--yellow);
+}
