@@ -1,12 +1,12 @@
 .name {
-  width: 150px;
+  width: 180px;
   font-size: 18px;
   color: var(--white);
   border-bottom: 1px solid var(--borderLine);
 }
 
 .number {
-  width: 150px;
+  width: 160px;
   font-size: 18px;
   color: var(--white);
   border-bottom: 1px solid var(--borderLine);
