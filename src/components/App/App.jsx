@@ -26,7 +26,7 @@ export default function App() {
         <SearchBox />
         {isLoading && <p className={css.message}>Loading...</p>}
         {isError && (
-          <p className={css.message}>
+          <p className={css.error}>
             Something went wrong! Please try reloading the page.
           </p>
         )}

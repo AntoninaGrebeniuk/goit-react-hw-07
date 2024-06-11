@@ -58,5 +58,15 @@
 }
 
 .message {
+  position: absolute;
+  top: 103px;
+  left: 200px;
+  color: var(--yellow);
+}
+
+.error {
+  position: absolute;
+  top: 103px;
+  left: 60px;
   color: var(--yellow);
 }
