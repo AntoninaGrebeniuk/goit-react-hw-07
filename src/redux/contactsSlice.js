@@ -4,11 +4,11 @@ import { selectNameFilter } from './filtersSlice';
 
 const handlePending = state => {
   state.error = false;
-  state.isLoading = true;
+  state.loading = true;
 };
 
 const handleRejected = (state, action) => {
-  state.isLoading = false;
+  state.loading = false;
   state.error = action.payload;
 };
 
