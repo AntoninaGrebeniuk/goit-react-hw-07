@@ -27,7 +27,7 @@ export default function App() {
         {isLoading && <p className={css.message}>Loading...</p>}
         {isError && (
           <p className={css.message}>
-            Something went wrong! Please try reload page.
+            Something went wrong! Please try reloading the page.
           </p>
         )}
         <ContactList />
